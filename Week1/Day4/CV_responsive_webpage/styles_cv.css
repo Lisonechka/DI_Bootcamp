@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+}
+#page {
+    background-color: azure;
+    background-size: cover;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 98%;
+    border-radius: 20px;
+}
+.name {
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 100px;
+
+}
+.profession {
+    font-size: 40px;
+    margin-left: 100px;
+}
+.img {
+    text-align: right;
+}
+
+
