@@ -1,0 +1,35 @@
+.maincont {
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+}
+.cont1 {
+    padding: 0;
+    list-style: none;
+}
+.orange {
+    color: white;
+    background-color: rgb(196, 194, 192);
+
+}
+
+.beige {
+    color: white;
+    background-color:rgb(148, 147, 144);
+}
+.brown {
+    color: white;
+    background-color: rgb(83, 81, 81);
+
+}
+.black {
+    color: white;
+    background-color: rgb(27, 27, 27);
+}
+li {
+    width: 50px;
+    height: 50px;
+    border: 1px solid bisque;
+    text-align: center;
+    line-height: 50px;
+}
