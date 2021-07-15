@@ -3,3 +3,13 @@
 html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway";
 }
+
+#background_img {
+    background-image: url('foto2.jpg');
+    height: 980px;
+}
+
+.mask {
+    background-color: rgba(250, 241, 241, 0.6);
+    background-size: 980px;
+}
