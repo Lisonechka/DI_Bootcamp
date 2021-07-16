@@ -3,14 +3,62 @@
 html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway";
 }
-
-header {
+#headerwrap {
+    background: url(../img/header-bg.jpg) no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  #headerwrap h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  
+  #headerwrap h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 768px ) {
+    #headerwrap h1 {
+      font-size: 50px;
+    }
+  
+    #headerwrap h2 {
+      font-size: 30px;
+    }
+  }
+/* .jumbotron, body, html {
     background-image: url('foto2.jpg');
-    height: 980px;
+    height: 100%;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     
-}
+} */
+
+/* .container {
+   
+} */
 
 /* .mask {
     background-color: rgba(250, 241, 241, 0.6);
