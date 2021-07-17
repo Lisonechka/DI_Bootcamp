@@ -1,10 +1,17 @@
 header {
     background-image: url("foto.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 /* .navbar {
     background: transparent;
     border: none;
   } */
-  .navbar {
+.navbar {
     background-color: rgba(255, 255, 255, 0);
+}
+.icon {
+    color:rgb(43, 81, 206);
+    margin-bottom: 20px ;
+   
 }
