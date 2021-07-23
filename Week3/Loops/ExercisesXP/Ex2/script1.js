@@ -12,4 +12,6 @@ for (let i in people) {
 let newListOfPeople = people.slice(1, 3);
 console.log(newListOfPeople); // ["Devon", "Jason"]
 
+console.log(people.indexOf("Mary"));
+console.log(people.indexOf("Foo")) //This method returns -1 if the lookup value never occurs
 
