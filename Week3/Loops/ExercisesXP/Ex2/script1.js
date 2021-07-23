@@ -7,4 +7,9 @@ for (let i in people) {
         break
     }
     console.log(people[i]);
-}
+} //undefinde
+
+let newListOfPeople = people.slice(1, 3);
+console.log(newListOfPeople); // ["Devon", "Jason"]
+
+
