@@ -9,9 +9,11 @@ console.log(mejoin);
 //Mixup
 let str1 = "milk";
 let str2 = "fresh";
-let str2slice = str2.slice(0, 2);
-let str1slice = str1.slice(0, 2);
-//can't solve
+let newStr1 = str2.slice(0, 2) + str1.slice(2);
+let newStr2 = str1.slice(0, 2) + str2.slice(2);
+let newWord = newStr1+ " " + newStr2;
+console.log(newWord);
+
 
 //Calculator "+"
 let num1 = prompt('Enter the first number');
