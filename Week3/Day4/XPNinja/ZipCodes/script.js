@@ -4,11 +4,8 @@
 
 
  switch (zipCode) {
-    case zipLength = 5:
-        
+    case zipLength === 5:  
     case typeof zipcode === "number":
-    //   case zipcode.includes(' ') == false:
-    //   case zipcode.indexOf(' ') >=== 0:
     case zipCode.search('') == '-1':
          alert('success');
           break;
@@ -16,8 +13,8 @@
      case zipLength < 5:
          alert('error');
          break;
-      default:
-          alert('error');
+    //   default:
+    //       alert('error');
  }
 
 //Part 2
