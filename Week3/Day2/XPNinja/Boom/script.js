@@ -1,6 +1,7 @@
 let number = prompt('Write a number');
 let o = "o";
 let nO = 'B' + o.repeat(number) + 'm';
+let nOBig = nO.toUpperCase();
 if (number < 2) {
       alert('Boom');
    } else if ((number >= 2) && (number %2 !== 0)) {
@@ -8,9 +9,9 @@ if (number < 2) {
   }  else if ((number >= 2) && (number %2 == 0) && (number %5 !== 0)) {
       alert(nO + '!');
   }  else if ((number %2 !== 0) && (number %5 == 0)) {
-      alert(nO.toUpperCase()); // Why doesn't work?
+      alert(nOBig); // Why doesn't work?
   }  else if ((number %2 == 0) && (number %5 == 0)) {
-     alert(nO.toUpperCase() + '!');
+     alert(nOBig + '!');
   }
 
 
