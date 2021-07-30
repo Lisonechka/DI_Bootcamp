@@ -1,19 +1,35 @@
-let arrayWords = [];
-arrayWords.push(prompt('Write several words separated by commas'));
+let stock = { 
+    "banana": 6, 
+    "apple": 0,
+    "pear": 12,
+    "orange": 32,
+    "blueberry":1
+}  
 
-function wordsInTheStars(){
-    let longestWord = 0;
-    for (let i = 0; i < arrayWords.length; i++) {
-        if ( arrayWords[i].length > longestWord.length ) {
-        longestWord = arrayWords[i];
+let prices = {    
+    "banana": 4, 
+    "apple": 2, 
+    "pear": 1,
+    "orange": 1.5,
+    "blueberry":10
+} 
+
+let shoppingList = ['banana', 'orange',  'apple'];
+
+function checkItemInTheStock (shoppingList) {
+    for (let i = 0; i < stock.length; i++ ) {
+        for ( let j = 0; j < shoppingList.length; j++) {
+        if( i === j) {
+            return true;
+        }
     }
 }
-return longestWord;
+return false
 }
+checkItemInTheStock(shoppingList);
 
-wordsInTheStars()
 
-// wordsInTheStars();
+// function myBill() {
 
-// function longestWord(arr) {
+// }
     
