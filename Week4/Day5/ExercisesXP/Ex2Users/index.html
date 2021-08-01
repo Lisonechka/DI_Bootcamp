@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="container">Users:</div>
+        <ul class="list">
+          <li>John</li>
+          <li>Pete</li>
+        </ul>
+        <ul class="list">
+          <li>David</li>
+          <li>Sarah</li>
+          <li>Dan</li>
+        </ul>
+</body>
+
+<script>
+//1
+let firstUl = document.getElementsByClassName("list")[0];
+let secondUl = document.getElementsByClassName("list")[1];
+firstUl.lastElementChild.textContent = "Richard";
+
+//2
+firstUl.firstElementChild.textContent = "Liza";
+secondUl.firstElementChild.textContent = "Liza";
+
+//3
+let newList = document.createElement('li'); 
+let newTextList = document.createTextNode('Hey students');
+newList.appendChild(newTextList);
+
+let newList1 = document.createElement('li'); 
+let newTextList1 = document.createTextNode('Hey students');
+newList1.appendChild(newTextList1);
+
+firstUl.appendChild(newList1);
+secondUl.appendChild(newList);
+
+//4
+let list2 = secondUl.children[1];
+secondUl.removeChild(list2);
+
+//Bonus
+//1
+firstUl.classList.add('student_list');
+secondUl.classList.add('student_list');
+//2
+firstUl.classList.add('university', 'attendance');
+
+
+
+
+
+
+</script>
+</html>
