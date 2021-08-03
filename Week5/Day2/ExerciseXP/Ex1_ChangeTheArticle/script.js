@@ -36,15 +36,16 @@ let submitButton = document.getElementById('submit');
 let fname = document.getElementById('fname');
 let lname = document.getElementById('lname');
 submitButton.addEventListener('click', checkValid);
-function checkValid () {
+function checkValid(e) {
     if (fname.value == "" || lname.value == "") {
-        alert('fill in the empty field');
+      alert('fill in the empty field');
+      e.preventDefault();
     } else { 
-        let t = document.createElement("table");
-        let txtTable = document.createTextNode(fname + lname);
-        t.appendChild(txtTable);
-        document.getElementsByClassName("usersAnswer").appendChild(t);
-        }
-}
+      let t = document.createElement("table");
+      t.insertRow(0).insertCell(0).textContent = fname.value + ' ' + lname.value;
+      document.querySelector(".usersAnswer").appendChild(t);
+    }
+    
+  }
 
-//why after esle, code doesn't work
+//why result not appears on the screen
