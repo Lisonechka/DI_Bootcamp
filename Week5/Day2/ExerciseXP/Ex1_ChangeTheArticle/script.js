@@ -37,9 +37,9 @@ let fname = document.getElementById('fname');
 let lname = document.getElementById('lname');
 submitButton.addEventListener('click', checkValid);
 function checkValid(e) {
+    e.preventDefault();
     if (fname.value == "" || lname.value == "") {
       alert('fill in the empty field');
-      e.preventDefault();
     } else { 
       let t = document.createElement("table");
       t.insertRow(0).insertCell(0).textContent = fname.value + ' ' + lname.value;
@@ -48,4 +48,8 @@ function checkValid(e) {
     
   }
 
-//why result not appears on the screen
+
+//7
+
+
+
