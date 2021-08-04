@@ -50,6 +50,17 @@ function checkValid(e) {
 
 
 //7
+$(document).ready(function(){
+  $("#p2").click(function(){
+      $("#p2").fadeOut()
+  });
+  $("#p2").click(function(){
+      $("#p2").fadeIn();
+  });
+});
 
 
+// p2.addEventListener('mouseover', faidOut);
+// function faidOut () {
+//   p2.fadeOut(3000);}
 
