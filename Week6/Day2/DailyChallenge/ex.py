@@ -12,9 +12,9 @@ else:
 print(user_string[0], user_string[len(user_string)-1])
 
 #3
-
-for i in range(1, len(user_string)):
-    print(user_string[i] + i)
+for i in range(0, len(user_string)):
+    print(user_string[:i+1])
+    i += 1
 
 #4
 import random
