@@ -43,8 +43,14 @@ import decimal
 # print(basket)
 
 # Exercise 6
-user_name = ''
-while user_name != 'Liza':
-    user_name = input('What is yor name? ')
-print('Ok, I recognized you')
+# user_name = ''
+# while user_name != 'Liza':
+#     user_name = input('What is yor name? ')
+# print('Ok, I recognized you')
+
+# Exercise 7
+my_list = ['a', 2, 16, 'd', 'abc', 'loop']
+for idx, val in enumerate(my_list):
+    if idx %2 == 0 :
+        print(val)
 
