@@ -17,10 +17,17 @@
 # Only if tuple convert into a list, and then back
 
 #Exercise 3
-item = 1
-for i in range(1, 21):
-    print(item)
-    item +=1
+# item = 1
+# for i in range(1, 21):
+#     print(item)
+#     item +=1
 
+#Exercise 4 How to start from 1.5?
+import decimal
 
+def float_range(start, stop, step):
+  while start < stop:
+    yield float(start)
+    start += decimal.Decimal(step)
 
+print(list(float_range(1, 5, '0.5')))
