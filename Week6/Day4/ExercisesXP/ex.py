@@ -13,3 +13,6 @@ friend_fav_numbers = {1, 7, 90, 100}
 our_fav_numbers = my_fav_numbers.union(friend_fav_numbers)
 print(our_fav_numbers)
 
+#Exercise2
+# Only if tuple convert into a list, and then back
+
