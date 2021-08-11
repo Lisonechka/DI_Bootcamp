@@ -22,12 +22,23 @@
 #     print(item)
 #     item +=1
 
-#Exercise 4 How to start from 1.5?
+#Exercise 4 How to start fromm 1.5
 import decimal
 
-def float_range(start, stop, step):
-  while start < stop:
-    yield float(start)
-    start += decimal.Decimal(step)
+# def float_range(start, stop, step):
+#   while start < stop:
+#     yield float(start)
+#     start += decimal.Decimal(step)
 
-print(list(float_range(1, 5, '0.5')))
+# print(list(float_range(1, 5, '0.5')))
+
+# Exercise 5
+basket = ["Banana", "Apples", "Oranges", "Blueberries"]
+basket.remove('Banana')
+basket.remove('Blueberries')
+basket.append('Kiwi')
+basket.insert(0, 'Apples')
+print(basket.count('Apples'))
+basket.clear()
+print(basket)
+
