@@ -23,7 +23,7 @@
 #     item +=1
 
 #Exercise 4 How to start fromm 1.5
-import decimal
+# import decimal
 
 # def float_range(start, stop, step):
 #   while start < stop:
@@ -49,8 +49,14 @@ import decimal
 # print('Ok, I recognized you')
 
 # Exercise 7
-my_list = ['a', 2, 16, 'd', 'abc', 'loop']
-for idx, val in enumerate(my_list):
-    if idx %2 == 0 :
-        print(val)
+# my_list = ['a', 2, 16, 'd', 'abc', 'loop']
+# for idx, val in enumerate(my_list):
+#     if idx %2 == 0 :
+#         print(val)
+
+# Exercise 8
+for i in range(1500, 2501):
+    if i%5==0 and i%7==0 :
+        print(i)
+
 
