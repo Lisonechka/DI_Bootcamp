@@ -33,12 +33,18 @@ import decimal
 # print(list(float_range(1, 5, '0.5')))
 
 # Exercise 5
-basket = ["Banana", "Apples", "Oranges", "Blueberries"]
-basket.remove('Banana')
-basket.remove('Blueberries')
-basket.append('Kiwi')
-basket.insert(0, 'Apples')
-print(basket.count('Apples'))
-basket.clear()
-print(basket)
+# basket = ["Banana", "Apples", "Oranges", "Blueberries"]
+# basket.remove('Banana')
+# basket.remove('Blueberries')
+# basket.append('Kiwi')
+# basket.insert(0, 'Apples')
+# print(basket.count('Apples'))
+# basket.clear()
+# print(basket)
+
+# Exercise 6
+user_name = ''
+while user_name != 'Liza':
+    user_name = input('What is yor name? ')
+print('Ok, I recognized you')
 
