@@ -4,7 +4,7 @@ class Farm:
         self.name = name_of_farm
         self.animals = {}
 
-    def add_animal(self, animal='', amount=1):
+    def add_animal(self, animal, amount=1):
         if animal not in self.animals:
             print(f'{animal}: {amount}')
         else:
@@ -12,15 +12,15 @@ class Farm:
 
     def get_info(self):
         print(f"{self.name}'s farm")
-        self.add_animal()
 
 
 macdonald = Farm("McDonald")
+print(macdonald.get_info())
 macdonald.add_animal('cow', 5)
 macdonald.add_animal('sheep')
 macdonald.add_animal('sheep')
 macdonald.add_animal('goat', 12)
-print(macdonald.get_info())
+
 
 # McDonald's farm
 #
