@@ -18,4 +18,4 @@ def oldest_cat():
     return oldest_name
 
 
-print(f'The oldest cat is {oldest_cat()}, and is {max(cats.age)} years old.')
+print(f'The oldest cat is {oldest_cat()}, and he is {max(cats.age)} years old.')
