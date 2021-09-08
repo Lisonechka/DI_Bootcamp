@@ -17,7 +17,10 @@ class Zoo:
         self.animals.remove(animal_sold)
 
     def sort_animals(self):
-        print(dict(enumerate(self.animals)))
+        for i in self.animals:
+            i += i
+            if i[0] == i[0]:
+                print(i)
 
 
 zoo1 = Zoo("Moonlight")
