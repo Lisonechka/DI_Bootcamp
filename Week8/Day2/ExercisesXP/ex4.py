@@ -1,4 +1,7 @@
 # Exercise 4 : Afternoon At The Zoo
+import string
+
+
 class Zoo:
     def __init__(self, zoo_name: str):
         self.animals = []
@@ -15,12 +18,20 @@ class Zoo:
 
     def sell_animal(self, animal_sold):
         self.animals.remove(animal_sold)
+        print(self.animals)
 
     def sort_animals(self):
-        for i in self.animals:
-            i += i
-            if i[0] == i[0]:
-                print(i)
+        for letter in list(string.ascii_uppercase):
+            animals_list = [animal for animal in self.animals if animal.startswith(letter)]
+            sorted_list = sorted(animals_list)
+            if sorted_list:
+                return dict(enumerate(sorted_list))
+
+    # def get_groups(self):
+    #     animals = self.sort_animals()
+    #     for key, values in animals:
+    #         print(f'{key}: {values}') don't know how to solve
+
 
 
 zoo1 = Zoo("Moonlight")
@@ -35,4 +46,5 @@ zoo1.get_animals()
 
 zoo1.sell_animal("Bear")
 zoo1.get_animals()
-zoo1.sort_animals()
+print(zoo1.sort_animals())
+zoo1.get_groups()
