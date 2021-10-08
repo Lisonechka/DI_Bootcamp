@@ -25,16 +25,15 @@ class Zoo:
             animals_list = [animal for animal in self.animals if animal.startswith(letter)]
             sorted_list = sorted(animals_list)
             if sorted_list:
-                return dict(enumerate(sorted_list))
+                print(sorted_list)
 
-    # def get_groups(self):
-    #     animals = self.sort_animals()
-    #     for key, values in animals:
-    #         print(f'{key}: {values}') don't know how to solve
-
+    def get_groups(self):
+        animals = self.sort_animals
+        print(animals)
 
 
-zoo1 = Zoo("Moonlight")
+
+zoo1 = Zoo('ramat_gan_safari')
 zoo1.add_animal('Ape')
 zoo1.add_animal('Cat')
 zoo1.add_animal('Baboon')
@@ -46,5 +45,6 @@ zoo1.get_animals()
 
 zoo1.sell_animal("Bear")
 zoo1.get_animals()
-print(zoo1.sort_animals())
+zoo1.sort_animals()
 zoo1.get_groups()
+

@@ -1,0 +1,14 @@
+.photo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img.resize {
+    width: 50%; /* you can use % */
+    height: auto;
+}
+
+h2 {
+  text-align: center;
+}
