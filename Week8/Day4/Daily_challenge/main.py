@@ -9,7 +9,7 @@ class Genes:
 
 class Chromosome(Genes):
     def __init__(self):
-        super().__init__():
+
 
 
 class DNA(Chromosome):
