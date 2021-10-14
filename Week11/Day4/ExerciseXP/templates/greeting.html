@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if 13 > current_time.hour >= 8 %}
+    <h1>Good morning!</h1>
+{% else 17 > current_time.hour >= 13 %}
+    <h1>Good afternoon!</h1>
+{% else 21 > current_time.hour >= 17 %}
+    <h1>Good evening!</h1>
+{% else 8 > current_time.hour >= 21:
+    <h1>Good night!</h1>
+
+</body>
+</html>
