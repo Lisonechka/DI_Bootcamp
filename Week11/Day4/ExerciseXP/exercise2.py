@@ -22,10 +22,10 @@ def products():
     return render_template('products.html', products=info)
 
 
-@app.route('/product/<prod_id>')
-def details(prod_id):
+@app.route('/product/<id>')
+def details(p_id):
     info = datab()
-    return render_template('product_details.html', products=info, prod_id=prod_id)
+    return render_template('product_details.html', products=info, prod_id=p_id)
 
 
 if __name__ == "__main__":
