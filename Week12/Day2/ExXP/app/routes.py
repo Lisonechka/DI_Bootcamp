@@ -9,8 +9,6 @@ from app.forms import Form
 def index():
     form = Form()
     if form.validate_on_submit():
-
-        ask = form.ask.data
-
-        print("question:", ask)
+        city_name = form.city_name.data
+        print("question:", city_name)
     return flask.render_template("index.html", form=form)

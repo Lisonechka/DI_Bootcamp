@@ -9,11 +9,14 @@
 
   <form method="POST">
 {{ form.hidden_tag() }}
-    <p>
-      <h1 class="text">Please, ask your question! </h1>
-      {{ form.ask(size=32) }}
-      {{ form.submit() }}
-    </p>
+    <div>
+      <h1 class="text">Please, add an information about the city! </h1>
+        <p>{{ form.city_name(size=32) }} </p>
+        <p>{{ form.country(size=32) }} </p>
+        <p>{{ form.inhabitants(size=32) }} </p>
+        <p>{{ form.area(size=32) }} </p>
+        <p>{{ form.submit() }} </p>
+    </div>
 </form>
 
 
