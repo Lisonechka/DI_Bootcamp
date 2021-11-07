@@ -11,10 +11,14 @@
 {{ form.hidden_tag() }}
     <div>
       <h1 class="text">Please, add an information about the city! </h1>
-        <p>{{ form.city_name(size=32) }} </p>
-        <p>{{ form.country(size=32) }} </p>
-        <p>{{ form.inhabitants(size=32) }} </p>
-        <p>{{ form.area(size=32) }} </p>
+        <p> {{ form.city_name.label}}
+            {{ form.city_name(size=32) }} </p>
+        <p>{{ form.country.label}}
+            {{ form.country(size=32) }} </p>
+        <p>{{ form.inhabitants.label}}
+            {{ form.inhabitants(size=32) }} </p>
+        <p>{{ form.area.label}}
+            {{ form.area(size=32) }} </p>
         <p>{{ form.submit() }} </p>
     </div>
 </form>
