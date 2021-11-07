@@ -2,13 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
     <title>Title</title>
 </head>
 <body>
- {% for message in get_flashed_messages() %}
-        <p>{{ message }}</p>
-    {% endfor %}
-   <h1>Hello!</h1>
+
+  <form method="POST">
+{{ form.hidden_tag() }}
+    <p>
+      <h1 class="text">Please, ask your question! </h1>
+      {{ form.ask(size=32) }}
+      {{ form.submit() }}
+    </p>
+</form>
+
 
 </body>
 </html>

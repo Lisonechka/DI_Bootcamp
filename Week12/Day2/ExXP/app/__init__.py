@@ -1,5 +1,9 @@
 import flask
 
-app = flask.Flask(__name__) # Remember: __name__ is the name of the file where the code is written
+from app.config import Config
+
+app = flask.Flask(__name__)
+
+app.config.from_object(Config)
 
 from app import routes
